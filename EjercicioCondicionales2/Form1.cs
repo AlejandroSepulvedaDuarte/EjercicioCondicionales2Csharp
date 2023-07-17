@@ -54,5 +54,13 @@ namespace EjercicioCondicionales2
             lblSalarioNeto.Text = Convert.ToString("$" + String.Format("{0:n0}", salarioApagar));
             gbResumenPago.Visible = true;
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtHorasTrabajadas.Text = String.Empty;
+            txtValorHora.Text = String.Empty;   
+            gbResumenPago.Visible= false; 
+            txtHorasTrabajadas.Focus();
+        }
     }
 }

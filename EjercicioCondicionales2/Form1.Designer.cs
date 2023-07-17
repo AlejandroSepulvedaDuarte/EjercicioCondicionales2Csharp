@@ -43,6 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.gbResumenPago.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             this.txtHorasTrabajadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtHorasTrabajadas.Location = new System.Drawing.Point(511, 69);
             this.txtHorasTrabajadas.Name = "txtHorasTrabajadas";
-            this.txtHorasTrabajadas.Size = new System.Drawing.Size(259, 34);
+            this.txtHorasTrabajadas.Size = new System.Drawing.Size(276, 34);
             this.txtHorasTrabajadas.TabIndex = 4;
             // 
             // txtValorHora
@@ -89,7 +90,7 @@
             this.txtValorHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorHora.Location = new System.Drawing.Point(511, 116);
             this.txtValorHora.Name = "txtValorHora";
-            this.txtValorHora.Size = new System.Drawing.Size(259, 34);
+            this.txtValorHora.Size = new System.Drawing.Size(276, 34);
             this.txtValorHora.TabIndex = 5;
             // 
             // btnCalcular
@@ -202,11 +203,23 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Salario base";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnLimpiar.Location = new System.Drawing.Point(652, 169);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(135, 43);
+            this.btnLimpiar.TabIndex = 8;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.gbResumenPago);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtValorHora);
@@ -240,6 +253,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
