@@ -44,6 +44,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.cmbEmpleadoAdmin = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbResumenPago.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,7 +117,7 @@
             this.gbResumenPago.Controls.Add(this.label5);
             this.gbResumenPago.Controls.Add(this.label4);
             this.gbResumenPago.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbResumenPago.Location = new System.Drawing.Point(17, 233);
+            this.gbResumenPago.Location = new System.Drawing.Point(12, 286);
             this.gbResumenPago.Name = "gbResumenPago";
             this.gbResumenPago.Size = new System.Drawing.Size(753, 205);
             this.gbResumenPago.TabIndex = 7;
@@ -214,11 +216,34 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // cmbEmpleadoAdmin
+            // 
+            this.cmbEmpleadoAdmin.FormattingEnabled = true;
+            this.cmbEmpleadoAdmin.Items.AddRange(new object[] {
+            "No",
+            "Si"});
+            this.cmbEmpleadoAdmin.Location = new System.Drawing.Point(24, 229);
+            this.cmbEmpleadoAdmin.Name = "cmbEmpleadoAdmin";
+            this.cmbEmpleadoAdmin.Size = new System.Drawing.Size(121, 24);
+            this.cmbEmpleadoAdmin.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label8.Location = new System.Drawing.Point(19, 197);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(235, 25);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Empleado administrativo?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.ClientSize = new System.Drawing.Size(838, 503);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cmbEmpleadoAdmin);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.gbResumenPago);
             this.Controls.Add(this.btnCalcular);
@@ -229,6 +254,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbResumenPago.ResumeLayout(false);
             this.gbResumenPago.PerformLayout();
             this.ResumeLayout(false);
@@ -254,6 +280,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ComboBox cmbEmpleadoAdmin;
+        private System.Windows.Forms.Label label8;
     }
 }
 
